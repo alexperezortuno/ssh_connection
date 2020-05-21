@@ -33,7 +33,7 @@ if __name__ == '__main__':
     except paramiko.ssh_exception.AuthenticationException:
         print('Authentication fail', end='\n')
     except paramiko.ssh_exception.SSHException as e:
-        print(e, end='\n')
+        print('SSH Connection error', end='\n')
     except KeyboardInterrupt:
         print('Program finished', end='\n')
     except TimeoutError:
